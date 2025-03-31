@@ -7,7 +7,7 @@ public class DrawShape {
         UI.addButton("Quit", UI::quit);
     }
 
-    private void doMouse(String action, double x, double y) {
+    public void doMouse(String action, double x, double y) {
         if (action.equals("clicked")) {
             UI.fillOval(x - 25, y - 25, 50, 50);
         }
